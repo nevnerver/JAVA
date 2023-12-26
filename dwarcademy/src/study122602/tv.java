@@ -6,6 +6,9 @@ public class tv {
 		
 		protected tv(){ //생성자메서드
 			maker="LG";
+			maker="SAMSUNG";
 		}
+		
+		
 
 }
