@@ -1,11 +1,10 @@
 package study122602;
 
 public class tv {
-	
-		public String maker;
-		
-		protected tv(){ //생성자메서드
-			maker="LG";
-		}
 
+	protected String maker;
+	
+	public tv(){  // 생성자메서드
+		maker="LG";
+	}
 }
