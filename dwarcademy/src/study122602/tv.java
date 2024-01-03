@@ -4,7 +4,7 @@ public class tv {
 
 	protected String maker;
 	
-	public tv(){  // »ı¼ºÀÚ¸Ş¼­µå
+	public tv(){  // ìƒì„±ìë©”ì„œë“œ
 		maker="LG";
 	}
 }

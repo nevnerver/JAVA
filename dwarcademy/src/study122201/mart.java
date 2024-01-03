@@ -3,10 +3,10 @@ package study122201;
 import java.text.DecimalFormat;
 
 public class mart {
-	String product_name; //Á¦Ç°¸í
-	int price;  // Á¦Ç°°¡°İ
-	String category; //Á¦Ç° ºĞ·ù
-	int quan;  // ¼ö·®
+	String product_name; //ì œí’ˆëª…
+	int price;  // ì œí’ˆê°€ê²©
+	String category; //ì œí’ˆ ë¶„ë¥˜
+	int quan;  // ìˆ˜ëŸ‰
 	
 	mart(){}
 	mart(String name, int price, String category, int quan){
@@ -22,6 +22,8 @@ public class mart {
 		DecimalFormat df = new DecimalFormat("###,###");
 		String quan_ = df.format(quan);
 		
-		return product_name+" - "+price_+"¿ø ("+quan_+"°³)";
+		return product_name+" - "+price_+"ì› ("+quan_+"ê°œ)";
 	}
 }
+
+

@@ -2,18 +2,18 @@ package study122102;
 
 public class music {
 	
-	static int count=0; //Å¬·¡½º º¯¼ö , ¸í½ÃÀûÃÊ±âÈ­·Î 0 ÀúÀå
+	static int count=0; //í´ë˜ìŠ¤ ë³€ìˆ˜ , ëª…ì‹œì ì´ˆê¸°í™”ë¡œ 0 ì €ì¥
 	
-	String singer; //°¡¼ö
-	String title;  // Á¦¸ñ
-	int playing_time; //Àç»ı½Ã°£
+	String singer; //ê°€ìˆ˜
+	String title;  // ì œëª©
+	int playing_time; //ì¬ìƒì‹œê°„
 	
-	music(){} // ±âº» »ı¼ºÀÚ¸Ş¼­µå
-	music(String °¡¼ö, String Á¦¸ñ){ // ¸Å°³º¯¼ö°¡ ÀÖ´Â »ı¼ºÀÚ ¸Ş¼­µå
-		this.singer=°¡¼ö;
-		this.title=Á¦¸ñ;
+	music(){} // ê¸°ë³¸ ìƒì„±ìë©”ì„œë“œ
+	music(String ê°€ìˆ˜, String ì œëª©){ // ë§¤ê°œë³€ìˆ˜ê°€ ìˆëŠ” ìƒì„±ì ë©”ì„œë“œ
+		this.singer=ê°€ìˆ˜;
+		this.title=ì œëª©;
 	}
-	music(String singer, String title, int time){ //¸Å°³º¯¼ö°¡ ÀÖ´Â »ı¼ºÀÚ ¸Ş¼­µå
+	music(String singer, String title, int time){ //ë§¤ê°œë³€ìˆ˜ê°€ ìˆëŠ” ìƒì„±ì ë©”ì„œë“œ
 		this(singer,title);
 		this.playing_time=time;
 	}
@@ -21,7 +21,7 @@ public class music {
 	
 	@Override
 	public String toString() {
-		return "°¡¼ö : "+singer+" - "+title+"("+transform()+")";
+		return "ê°€ìˆ˜ : "+singer+" - "+title+"("+transform()+")";
 	}
 	
 	String transform() {
@@ -35,3 +35,17 @@ public class music {
 
 //	int a=456;
 //	Integer.toString(a).charAt(0)//substring(0,1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

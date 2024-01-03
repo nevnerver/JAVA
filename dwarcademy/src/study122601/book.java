@@ -2,14 +2,14 @@ package study122601;
 
 public class book {
 
-	static int cnt=0;  // Å¬·¡½º º¯¼ö 
+	static int cnt=0;  // í´ë˜ìŠ¤ ë³€ìˆ˜ 
 	
-	private String title;   // ÀÎ½ºÅÏ½ºº¯¼ö
-	String writer;  // ÀÎ½ºÅÏ½ºº¯¼ö
-	final int book_num; // ÀÎ½ºÅÏ½º »ó¼ö
+	private String title;   // ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜
+	String writer;  // ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜
+	final int book_num; // ì¸ìŠ¤í„´ìŠ¤ ìƒìˆ˜
 	
 	
-	book(){ // »ı¼ºÀÚ¸Ş¼­µå
+	book(){ // ìƒì„±ìë©”ì„œë“œ
 		book_num=10;
 	}
 	
@@ -49,14 +49,15 @@ public class book {
 	}
 
 
-	static void init() { // Å¬·¡½º ¸Ş¼­µå
-		System.out.println("Ã¥ µî·Ï ½ÃÀÛ");
+	static void init() { // í´ë˜ìŠ¤ ë©”ì„œë“œ
+		System.out.println("ì±… ë“±ë¡ ì‹œì‘");
 	}
 	
-	void create() {  // ÀÎ½ºÅÏ½º ¸Ş¼­µå
-		title="c¾ğ¾î";
-		System.out.println("Ã¥ µî·Ï");
+	void create() {  // ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ
+		title="cì–¸ì–´";
+		System.out.println("ì±… ë“±ë¡");
 	}
 	
 }
-// ÀÎ½ºÅÏ½ºº¯¼ö´Â  ÀÎ½ºÅÏ½º(°´Ã¼)»ı¼ºÇØ¾ßÁö¸¸ »ç¿ëÇÒ¼ö ÀÖ´Â º¯¼ö´Ù.
+// ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ëŠ”  ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ìƒì„±í•´ì•¼ì§€ë§Œ ì‚¬ìš©í• ìˆ˜ ìˆëŠ” ë³€ìˆ˜ë‹¤.
+

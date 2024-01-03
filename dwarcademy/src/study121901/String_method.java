@@ -10,7 +10,7 @@ public class String_method {
 
 		String word="i like banana chacha";
 		
-		// 1. ¹®ÀÚ¿­¿¡¼­ Æ¯Á¤ ¹®ÀÚ ÃßÃâ - charAt()
+		// 1. ë¬¸ìì—´ì—ì„œ íŠ¹ì • ë¬¸ì ì¶”ì¶œ - charAt()
 		char ch = word.charAt(2);
 		System.out.println( ch );
 		
@@ -18,17 +18,17 @@ public class String_method {
 		ch = scan.next().charAt(0);
 		System.out.println(  ch );
 		
-		// 2. ¹®ÀÚ¿­ ºñ±³ - equals()
+		// 2. ë¬¸ìì—´ ë¹„êµ - equals()
 		if(  word.equals("i like") )
-			System.out.println("°°´Ù");
+			System.out.println("ê°™ë‹¤");
 		else
-			System.out.println("°°Áö¾Ê´Ù");
+			System.out.println("ê°™ì§€ì•Šë‹¤");
 		
-		// 3. ¹®ÀÚ¿­À» byte·Î ¹İÈ¯ - getBytes() - ÆÄÀÏ ºÒ·¯¿À±â
+		// 3. ë¬¸ìì—´ì„ byteë¡œ ë°˜í™˜ - getBytes() - íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 		byte[] code = word.getBytes();
 		System.out.println( Arrays.toString( code ) );
 		
-		// 4. ¹®ÀÚ¿­¿¡¼­ Æ¯Á¤ ¹®ÀÚ¿­ÀÇ À§Ä¡¸¦ ¸®ÅÏ - indexOf()
+		// 4. ë¬¸ìì—´ì—ì„œ íŠ¹ì • ë¬¸ìì—´ì˜ ìœ„ì¹˜ë¥¼ ë¦¬í„´ - indexOf()
 		 int k = word.indexOf('k');
 		 System.out.println( k );
 		 int banana = word.indexOf("banana");
@@ -39,19 +39,19 @@ public class String_method {
 		 int cha = word.indexOf("ch", 15);
 		 System.out.println( cha );
 		 
-		 // 5. ¹®ÀÚ¿­ÀÇ ±æÀÌ - length()
+		 // 5. ë¬¸ìì—´ì˜ ê¸¸ì´ - length()
 		 int len = word.length();
-		 System.out.println("¹®ÀÚ¿­ ±æÀÌ : " + len);
+		 System.out.println("ë¬¸ìì—´ ê¸¸ì´ : " + len);
 		 
-		 // 6. ¹®ÀÚ¿­ º¯°æ(Ä¡È¯) - replace()
+		 // 6. ë¬¸ìì—´ ë³€ê²½(ì¹˜í™˜) - replace()
 		 String temp = word.replace("banana chacha", "rescue tayo");
-		 System.out.println("¿øº» : " + word );
-		 System.out.println("º¯°æÈÄ : " + temp);
+		 System.out.println("ì›ë³¸ : " + word );
+		 System.out.println("ë³€ê²½í›„ : " + temp);
 		 
-		 // ÀÚ¹Ù½ºÅ©¸³Æ®¿¡¼­  Á¤±ÔÇ¥Çö½ÄÀ» ÀÌ¿ëÇÏ¿© ¹®ÀÚ¿­ º¯°æ
-		 // ÀÚ¹Ù¿¡¼­µµ Á¤±ÔÇ¥Çö½ÄÀ» »ç¿ëÇÑ´Ù.
+		 // ìë°”ìŠ¤í¬ë¦½íŠ¸ì—ì„œ  ì •ê·œí‘œí˜„ì‹ì„ ì´ìš©í•˜ì—¬ ë¬¸ìì—´ ë³€ê²½
+		 // ìë°”ì—ì„œë„ ì •ê·œí‘œí˜„ì‹ì„ ì‚¬ìš©í•œë‹¤.
 		 //  [^0-9]
-		 // Æ¯¼ö¹®ÀÚÁ¦°Å [^¤¡-¤¾¤¿-¤Ó°¡-ÆRa-zA-Z0-9]
+		 // íŠ¹ìˆ˜ë¬¸ìì œê±° [^ã„±-ã…ã…-ã…£ê°€-í£a-zA-Z0-9]
 		 
 		 temp = word.replaceAll("a.","c" );
 		 System.out.println( temp );
@@ -60,7 +60,7 @@ public class String_method {
 		 temp = temp.replaceAll("[^0-9]", "");
 		 System.out.println( temp );
 		 
-		 // 7. ¹®ÀÚ¿­ ÃßÃâ - substring
+		 // 7. ë¬¸ìì—´ ì¶”ì¶œ - substring
 		 
 		 temp = word.substring(5);
 		 System.out.println( temp );
@@ -69,56 +69,58 @@ public class String_method {
 		 System.out.println( temp );
 		 
 		 temp = "skyblue@gmail.com";
-		 // ¾ÆÀÌµğ¿Í  Æ÷ÅĞ»çÀÌÆ®ÁÖ¼Ò ¾Ë¾Æ³»±â
+		 // ì•„ì´ë””ì™€  í¬í„¸ì‚¬ì´íŠ¸ì£¼ì†Œ ì•Œì•„ë‚´ê¸°
 		 String id = temp.substring(0, temp.indexOf("@") );
-		 System.out.println("¾ÆÀÌµğ : "+id);
+		 System.out.println("ì•„ì´ë”” : "+id);
 		 
 		 String url = temp.substring( temp.indexOf("@")+1 );
 		 System.out.println( url );
 		 
-		 temp = "´ëÀü±¤¿ª½Ã Áß±¸ Áß¾Ó·Î 121¹ø±æ 20";
-		 // À§ ÁÖ¼Ò¿¡¼­ µµ½Ã¸í°ú  µµ·Î¸í À» Ãâ·ÂÇÏ¼¼¿ä
+		 temp = "ëŒ€ì „ê´‘ì—­ì‹œ ì¤‘êµ¬ ì¤‘ì•™ë¡œ 121ë²ˆê¸¸ 20";
+		 // ìœ„ ì£¼ì†Œì—ì„œ ë„ì‹œëª…ê³¼  ë„ë¡œëª… ì„ ì¶œë ¥í•˜ì„¸ìš”
 		 String city = temp.substring(0, temp.indexOf(" "));
 		 String road = temp.substring( temp.indexOf(" ", city.length()+1)+1  );
 		 
 		System.out.println(city+"  "+ road);
 		
-		// 8. ¹®ÀÚ¿­ ºĞ¸® - split() , ÇÏ³ªÀÇ ¹®ÀÚ¿­À» ÁöÁ¤ÇÑ ¹®ÀÚ±âÁØÀ¸·Î ¹è¿­·Î »ı¼º,
+		// 8. ë¬¸ìì—´ ë¶„ë¦¬ - split() , í•˜ë‚˜ì˜ ë¬¸ìì—´ì„ ì§€ì •í•œ ë¬¸ìê¸°ì¤€ìœ¼ë¡œ ë°°ì—´ë¡œ ìƒì„±,
 		String[] str = word.split(" ");
 		System.out.println( Arrays.toString( str ));
 		temp = "010-1234-5678";
 		String password = temp.split("-")[2];
 		
-		temp = "12 °¡ 4570";
+		temp = "12 ê°€ 4570";
 		String[] car = temp.split(" ");
 		if( car[2].equals( "4570" ) ) {
-			System.out.println("ÁÖÂ÷ºñ Á¤»ê");
+			System.out.println("ì£¼ì°¨ë¹„ ì •ì‚°");
 		}else if( car[0].equals( "12" ) ) {
-			System.out.println( "ÁÖÂ÷ºñ Á¤»ê");
+			System.out.println( "ì£¼ì°¨ë¹„ ì •ì‚°");
 		}
 		
-		// 9. ´ë¹®ÀÚ, ¼Ò¹®ÀÚ º¯È¯ - toLowerCase(), toUpperCase()
+		// 9. ëŒ€ë¬¸ì, ì†Œë¬¸ì ë³€í™˜ - toLowerCase(), toUpperCase()
 		temp = word.toUpperCase();
-		System.out.println("´ë¹®ÀÚ : " +temp);
+		System.out.println("ëŒ€ë¬¸ì : " +temp);
 		
 		temp = temp.toLowerCase();
-		System.out.println("¼Ò¹®ÀÚ : " +temp);
+		System.out.println("ì†Œë¬¸ì : " +temp);
 		
-		// 10. ¹®ÀÚ¿­°ú ¹®ÀÚ¿­À» °áÇÕ - concat()
-		word = "³»°¡ ÁÁ¾ÆÇÏ´Â ³ë·¡ : ";
-		temp = "¹Ù³ª³ª ¾Ë·¯Áö ¿ø¼şÀÌ";
+		// 10. ë¬¸ìì—´ê³¼ ë¬¸ìì—´ì„ ê²°í•© - concat()
+		word = "ë‚´ê°€ ì¢‹ì•„í•˜ëŠ” ë…¸ë˜ : ";
+		temp = "ë°”ë‚˜ë‚˜ ì•ŒëŸ¬ì§€ ì›ìˆ­ì´";
 		String song = word.concat(temp);
 		System.out.println( song );
 		
-		// 11. String ÂüÁ¶º¯¼ö°¡ ºó°ªÀÎÁö È®ÀÎ( ¹®ÀÚ¿­ÀÌ ÀÖ³Ä ¾ø³Ä) - isEmpty()
+		// 11. String ì°¸ì¡°ë³€ìˆ˜ê°€ ë¹ˆê°’ì¸ì§€ í™•ì¸( ë¬¸ìì—´ì´ ìˆëƒ ì—†ëƒ) - isEmpty()
 		System.out.println(  word.isEmpty() );
 		
-		// 12. ¹®ÀÚ¿­¿¡  Æ¯Á¤ ¹®ÀÚ ¶Ç´Â ¹®ÀÚ¿­ Æ÷ÇÔ ¿©ºÎ - contains()
-		System.out.println(  temp.contains("¿ø¼şÀÌ")  );
+		// 12. ë¬¸ìì—´ì—  íŠ¹ì • ë¬¸ì ë˜ëŠ” ë¬¸ìì—´ í¬í•¨ ì—¬ë¶€ - contains()
+		System.out.println(  temp.contains("ì›ìˆ­ì´")  );
 		
-		// 13. Æ¯Á¤ ¹®ÀÚ·Î ½ÃÀÛ, ³¡³ª´ÂÁö°Ë»ç - startsWith() , endsWith()
-		System.out.println(  word.startsWith("³»°¡") );
+		// 13. íŠ¹ì • ë¬¸ìë¡œ ì‹œì‘, ëë‚˜ëŠ”ì§€ê²€ì‚¬ - startsWith() , endsWith()
+		System.out.println(  word.startsWith("ë‚´ê°€") );
 		
 	}
 
 }
+
+

@@ -6,10 +6,10 @@ public class java_method {
 
 	static Scanner scan = new Scanner(System.in);
 	
-	//static - Å¬·¡½º(static) ¸Ş¼­µå¿¡¼­´Â  ¿ÀÁ÷ staticº¯¼ö³ª, static ¸Ş¼­µå¸¸ »ç¿ë °¡´É
-	//        static ¸Ş¼­µå¿¡¼­ ÀÎ½ºÅÏ½ºº¯¼ö¿Í ÀÎ½ºÅÏ½º ¸Ş¼­µå´Â »ç¿ë ºÒ°¡
+	//static - í´ë˜ìŠ¤(static) ë©”ì„œë“œì—ì„œëŠ”  ì˜¤ì§ staticë³€ìˆ˜ë‚˜, static ë©”ì„œë“œë§Œ ì‚¬ìš© ê°€ëŠ¥
+	//        static ë©”ì„œë“œì—ì„œ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ì™€ ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” ì‚¬ìš© ë¶ˆê°€
 	
-	public static void search( student[] std , String  name ) { // ÀÌ¸§À¸·Î °Ë»öÇÏ¿© ¼ºÀû Á¶È¸
+	public static void search( student[] std , String  name ) { // ì´ë¦„ìœ¼ë¡œ ê²€ìƒ‰í•˜ì—¬ ì„±ì  ì¡°íšŒ
 		boolean isStd = false;
 		
 		for( int i=0; i<std.length; i++) {
@@ -19,20 +19,20 @@ public class java_method {
 			}
 		}
 		if( !isStd )
-			System.out.println("µî·ÏµÇÁö ¾ÊÀº ÇĞ»ı ÀÔ´Ï´Ù.");
+			System.out.println("ë“±ë¡ë˜ì§€ ì•Šì€ í•™ìƒ ì…ë‹ˆë‹¤.");
 	}
 	
 	public static void main(String[] args) {
 		
-		student[] std = new student[6]; // ÂüÁ¶º¯¼ö 6°³ °ø°£ »ı¼º
-		std[0] = new student("ÀÌ¼ø½Å",86,95,67);
-		std[1] = new student("±èÀ¯½Å",94,84,55);
-		std[2] = new student("Àåº¸°í",78,34,76);
-		std[3] = new student("ÀÌ¼º°è",98,55,46);
-		std[4] = new student("Á¤¾à¿ë",100,99,87);
-		std[5] = new student("¹®ÀÍÁ¡",76,56,100);
+		student[] std = new student[6]; // ì°¸ì¡°ë³€ìˆ˜ 6ê°œ ê³µê°„ ìƒì„±
+		std[0] = new student("ì´ìˆœì‹ ",86,95,67);
+		std[1] = new student("ê¹€ìœ ì‹ ",94,84,55);
+		std[2] = new student("ì¥ë³´ê³ ",78,34,76);
+		std[3] = new student("ì´ì„±ê³„",98,55,46);
+		std[4] = new student("ì •ì•½ìš©",100,99,87);
+		std[5] = new student("ë¬¸ìµì ",76,56,100);
 		
-		System.out.print("Á¶È¸ÇÒ ÇĞ»ı ÀÌ¸§ ÀÔ·Â : ");
+		System.out.print("ì¡°íšŒí•  í•™ìƒ ì´ë¦„ ì…ë ¥ : ");
 		String name = scan.nextLine();
 		
 		search( std, name  );
@@ -45,10 +45,10 @@ public class java_method {
 		
 //		student s = new student(); 
 //		
-//		student std = new student("ÀÌ¼ø½Å",86,95,67); //studentÅ¬·¡½º °´Ã¼¸¦ »ı¼ºÇØ¼­ ÂüÁ¶º¯¼ö std¿¡ ÀúÀå
+//		student std = new student("ì´ìˆœì‹ ",86,95,67); //studentí´ë˜ìŠ¤ ê°ì²´ë¥¼ ìƒì„±í•´ì„œ ì°¸ì¡°ë³€ìˆ˜ stdì— ì €ì¥
 ////
 //		System.out.println( std );
-//		std.name="ÀÌ¼ø½Å";
+//		std.name="ì´ìˆœì‹ ";
 //		std.kor=86;
 //		std.mat=95;
 //		std.eng=67;

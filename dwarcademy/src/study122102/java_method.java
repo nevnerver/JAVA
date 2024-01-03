@@ -10,7 +10,7 @@ public class java_method {
 		}
 	}
 	
-	static void song_search(String keyword, music[] mylist) { // °¡¼ö ¶Ç´Â ³ë·¡Á¦¸ñ À¸·Î °Ë»ö
+	static void song_search(String keyword, music[] mylist) { // ê°€ìˆ˜ ë˜ëŠ” ë…¸ë˜ì œëª© ìœ¼ë¡œ ê²€ìƒ‰
 		
 		boolean issong = false;
 		for( music obj : mylist) {
@@ -20,7 +20,7 @@ public class java_method {
 			}
 		}
 		if(	!issong	)
-			System.out.println("°Ë»ö °á°ú ¾øÀ½");
+			System.out.println("ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ");
 	}
 	
 	static Scanner scan = new Scanner(System.in);
@@ -28,18 +28,20 @@ public class java_method {
 	public static void main(String[] args) {
 		
 		music[] mylist = new music[] {
-			new music("ÆúÅ´","ÀÖÀİ¾Æ",328), new music("Å¾Çö","È£¶û¼ö¿ù°¡",441),
-			new music("´ÙºñÄ¡","½½ÇÂ´ÙÁü",332),new music("ÅäÀÌ","¼¼»ç¶÷",445),
-			new music("Á¤Àç¿í","µé¸®³ª¿ä",359),new music("´ÙºñÄ¡","»ç¶û »ç¶û¾Æ",332),
-			new music("È²Ä¡¿­","¾îÂî ÀØÀ¸¿À",442),new music("¸á·Î¸Á½º","ÁÁÀº³¯",529),
-			new music("Á¶Á¤¼®","¾Æ·ÎÇÏ",405),new music("¾ÆÀÌÀ¯","³» ¼ÕÀ» Àâ¾Æ",315),
+			new music("í´í‚´","ìˆì–ì•„",328), new music("íƒ‘í˜„","í˜¸ë‘ìˆ˜ì›”ê°€",441),
+			new music("ë‹¤ë¹„ì¹˜","ìŠ¬í”ˆë‹¤ì§",332),new music("í† ì´","ì„¸ì‚¬ëŒ",445),
+			new music("ì •ì¬ìš±","ë“¤ë¦¬ë‚˜ìš”",359),new music("ë‹¤ë¹„ì¹˜","ì‚¬ë‘ ì‚¬ë‘ì•„",332),
+			new music("í™©ì¹˜ì—´","ì–´ì°Œ ìŠìœ¼ì˜¤",442),new music("ë©œë¡œë§ìŠ¤","ì¢‹ì€ë‚ ",529),
+			new music("ì¡°ì •ì„","ì•„ë¡œí•˜",405),new music("ì•„ì´ìœ ","ë‚´ ì†ì„ ì¡ì•„",315),
 		};
 		
 		list_print(mylist);
 		
-		System.out.print("°¡¼ö ¶Ç´Â ³ë·¡Á¦¸ñ : ");
+		System.out.print("ê°€ìˆ˜ ë˜ëŠ” ë…¸ë˜ì œëª© : ");
 		String keyword = scan.nextLine();
 		song_search(keyword,mylist);
 	}
 
 }
+
+

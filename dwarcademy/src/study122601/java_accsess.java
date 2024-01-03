@@ -8,12 +8,12 @@ public class java_accsess {
 
 	public static void main(String[] args) {
 		
-		//book.title="C¾ð¾î";
-		book.cnt=1; // Å¬·¡½ºº¯¼öÀÌ±â¶§¹®¿¡ °´Ã¼»ý¼º¾øÀÌ »ç¿ë°¡´É
+		//book.title="Cì–¸ì–´";
+		book.cnt=1; // í´ëž˜ìŠ¤ë³€ìˆ˜ì´ê¸°ë•Œë¬¸ì— ê°ì²´ìƒì„±ì—†ì´ ì‚¬ìš©ê°€ëŠ¥
 		book bk = new book();
-		bk.title="c¾ð¾î"; // ÀÎ½ºÅÏ½ºº¯¼ö´Â °´Ã¼ »ý¼ºÈÄ »ç¿ë°¡´É
+		bk.title="cì–¸ì–´"; // ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ëŠ” ê°ì²´ ìƒì„±í›„ ì‚¬ìš©ê°€ëŠ¥
 		book.cnt=2;
-		bk.cnt=3; // Å¬·¡½ºÀÇ ¸ðµç °´Ã¼µéÀÌ °øÅëÀ¸·Î Å¬·¡½ºº¯¼ö¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+		bk.cnt=3; // í´ëž˜ìŠ¤ì˜ ëª¨ë“  ê°ì²´ë“¤ì´ ê³µí†µìœ¼ë¡œ í´ëž˜ìŠ¤ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
 		
 		book.init();
 		
@@ -28,40 +28,45 @@ public class java_accsess {
 		System.out.println( Arrays.toString(arr)  );
 		
 		book bk1 = new book();
-		bk1.title="html°ú css";
+		bk1.title="htmlê³¼ css";
 		
 		tv t1 = new tv();
-		t1.maker="»ï¼º";
+		t1.maker="ì‚¼ì„±";
 		
 	}
 
 }
-// Á¦¾îÀÚ - Å¬·¡½º, º¯¼ö, ¸Þ¼­µå
-//  Á¢±ÙÁ¦¾îÀÚ - public, private, protected, default
-//   static , final, abstract ,native µîµî
+// ì œì–´ìž - í´ëž˜ìŠ¤, ë³€ìˆ˜, ë©”ì„œë“œ
+//  ì ‘ê·¼ì œì–´ìž - public, private, protected, default
+//   static , final, abstract ,native ë“±ë“±
 
-// static - 'Å¬·¡½ºÀÇ' ¶Ç´Â '°øÅëÀûÀÎ' 
-//        - staticÀÌ ºÙÀº º¯¼ö³ª ¸Þ¼­µå´Â ÀÎ½ºÅÏ½º(°´Ã¼)¸¦ »ý¼ºÇÏÁö ¾Ê°í »ç¿ë°¡´É
-//        - static º¯¼ö´Â ÀÎ½ºÅÏ½º ¸Þ¼­µå¿¡¼­ »ç¿ë °¡´É ÇÏ´Ù.
-//        - static ¸Þ¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½ºº¯¼ö »ç¿ëºÒ°¡
-//        - static ¸Þ¼­µå¿¡¼­´Â ¿ÀÁ÷ static º¯¼ö³ª, static ¸Þ¼­µå¸¸ »ç¿ë °¡´É
-// 		  - static class ³»ºÎ Å¬·¡½º¿¡ Àû¿ë ÇÏ¿© »ç¿ëÇÑ´Ù.
+// static - 'í´ëž˜ìŠ¤ì˜' ë˜ëŠ” 'ê³µí†µì ì¸' 
+//        - staticì´ ë¶™ì€ ë³€ìˆ˜ë‚˜ ë©”ì„œë“œëŠ” ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ë¥¼ ìƒì„±í•˜ì§€ ì•Šê³  ì‚¬ìš©ê°€ëŠ¥
+//        - static ë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œì—ì„œ ì‚¬ìš© ê°€ëŠ¥ í•˜ë‹¤.
+//        - static ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ ì‚¬ìš©ë¶ˆê°€
+//        - static ë©”ì„œë“œì—ì„œëŠ” ì˜¤ì§ static ë³€ìˆ˜ë‚˜, static ë©”ì„œë“œë§Œ ì‚¬ìš© ê°€ëŠ¥
+// 		  - static class ë‚´ë¶€ í´ëž˜ìŠ¤ì— ì ìš© í•˜ì—¬ ì‚¬ìš©í•œë‹¤.
 
-// final - '¸¶Áö¸·ÀÇ' ¶Ç´Â 'º¯°æµÉ ¼ö ¾ø´Â'
-//       - finalÀ» º¯¼ö¿¡ ºÙ¿©ÁÖ¸é »ó¼ö¿¡ ÀÇ¹Ì°¡ µÈ´Ù.(ÃÊ±â°ª ÀÌÈÄ¿¡ °ª º¯°æ ¾ÈµÊ)
-//       - finalÀÌ ºÙÀº ¹è¿­Àº ¹è¿­³»ºÎÀÇ °ª º¯°æÀº µÇÁö¸¸, ´Ù¸¥ ¹è¿­·Î ±³Ã¼´Â ºÒ°¡´É
-//       - finalÀ» ¸Þ¼­µå¿¡ ºÙ¿©ÁÖ¸é  ÇØ´ç ¸Þ¼­µå´Â ¿À¹ö¶óÀÌµùÀÌ ¾ÈµÈ´Ù.
-//       - finalÀ» class¿¡ ºÙ¿©ÁÖ¸é  »ó¼Ó ÇÒ ¼ö ¾ø´Ù.(Ãß»óÈ­µµ ¾ÈµÈ´Ù.)
+// final - 'ë§ˆì§€ë§‰ì˜' ë˜ëŠ” 'ë³€ê²½ë  ìˆ˜ ì—†ëŠ”'
+//       - finalì„ ë³€ìˆ˜ì— ë¶™ì—¬ì£¼ë©´ ìƒìˆ˜ì— ì˜ë¯¸ê°€ ëœë‹¤.(ì´ˆê¸°ê°’ ì´í›„ì— ê°’ ë³€ê²½ ì•ˆë¨)
+//       - finalì´ ë¶™ì€ ë°°ì—´ì€ ë°°ì—´ë‚´ë¶€ì˜ ê°’ ë³€ê²½ì€ ë˜ì§€ë§Œ, ë‹¤ë¥¸ ë°°ì—´ë¡œ êµì²´ëŠ” ë¶ˆê°€ëŠ¥
+//       - finalì„ ë©”ì„œë“œì— ë¶™ì—¬ì£¼ë©´  í•´ë‹¹ ë©”ì„œë“œëŠ” ì˜¤ë²„ë¼ì´ë”©ì´ ì•ˆëœë‹¤.
+//       - finalì„ classì— ë¶™ì—¬ì£¼ë©´  ìƒì† í•  ìˆ˜ ì—†ë‹¤.(ì¶”ìƒí™”ë„ ì•ˆëœë‹¤.)
 
-// Á¢±ÙÁ¦¾îÀÚ 
-// public - °ø°øÀÇ,  Á¦ÇÑ¾øÀÌ »ç¿ë°¡´É,  ÆÐÅ°Áö°¡ °°Áö¾Ê¾Æµµ »ç¿ë°¡´É
-//        - class ¿¡ public ÀÌ ºÙÀº °æ¿ì  ¾îµð¿¡¼­µµ ÇØ´ç Å¬·¡½º¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-//        - ÀÎ½ºÅÏ½ºº¯¼ö, Å¬·¡½ºº¯¼ö, ÀÎ½ºÅÏ½º¸Þ¼­µå, Å¬·¡½º¸Þ¼­µå µî  public ÀÌ ºÙÁö¾ÊÀ¸¸é
-//          °´Ã¼¸¦ »ý¼ºÇÏ¿©µµ »ç¿ëÇÏ´Âµ¥ Á¦ÇÑÀÌ ÀÖ´Ù.
+// ì ‘ê·¼ì œì–´ìž 
+// public - ê³µê³µì˜,  ì œí•œì—†ì´ ì‚¬ìš©ê°€ëŠ¥,  íŒ¨í‚¤ì§€ê°€ ê°™ì§€ì•Šì•„ë„ ì‚¬ìš©ê°€ëŠ¥
+//        - class ì— public ì´ ë¶™ì€ ê²½ìš°  ì–´ë””ì—ì„œë„ í•´ë‹¹ í´ëž˜ìŠ¤ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
+//        - ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜, í´ëž˜ìŠ¤ë³€ìˆ˜, ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œ, í´ëž˜ìŠ¤ë©”ì„œë“œ ë“±  public ì´ ë¶™ì§€ì•Šìœ¼ë©´
+//          ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ë„ ì‚¬ìš©í•˜ëŠ”ë° ì œí•œì´ ìžˆë‹¤.
 //
-// default - °°Àº ÆÐÅ°Áö¿¡¼­¸¸ »ç¿ë°¡´É 
-// protected - °°Àº ÆÐÅ°Áö¿¡¼­¸¸ »ç¿ë°¡´É , 
-//           - ´Ù¸¥ ÆÐÅ°Áö¶óµµ  »ó¼Ó°ü°è¶ó¸é »ç¿ë°¡´É
-// private - ÆÐÅ°Áö°¡ °°¾Æµµ ´Þ¶óµµ  »ç¿ë ºÒ°¡
-//         - ¾î¶°ÇÑ Å¬·¡½ºµµ »ç¿ë ÇÒ¼ö ¾ø´Ù.
-//         -  ¿ÀÁ÷ ÇØ´ç Å¬·¡½º ³»ºÎ¿¡¼­¸¸ »ç¿ë°¡´É
+// default - ê°™ì€ íŒ¨í‚¤ì§€ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥ 
+// protected - ê°™ì€ íŒ¨í‚¤ì§€ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥ , 
+//           - ë‹¤ë¥¸ íŒ¨í‚¤ì§€ë¼ë„  ìƒì†ê´€ê³„ë¼ë©´ ì‚¬ìš©ê°€ëŠ¥
+// private - íŒ¨í‚¤ì§€ê°€ ê°™ì•„ë„ ë‹¬ë¼ë„  ì‚¬ìš© ë¶ˆê°€
+//         - ì–´ë– í•œ í´ëž˜ìŠ¤ë„ ì‚¬ìš© í• ìˆ˜ ì—†ë‹¤.
+//         -  ì˜¤ì§ í•´ë‹¹ í´ëž˜ìŠ¤ ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥
+
+
+
+
+

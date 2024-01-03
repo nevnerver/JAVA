@@ -4,11 +4,11 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class buyer {
-	int member_num; //È¸¿ø¹øÈ£
-	String member_name; //È¸¿ø ÀÌ¸§
-	int expend; // ÁöºÒ±İ¾×
-	mart[] basket; // Àå¹Ù±¸´Ï
-	int cnt;// Àå¹Ù±¸´Ï ¼ö·®
+	int member_num; //íšŒì›ë²ˆí˜¸
+	String member_name; //íšŒì› ì´ë¦„
+	int expend; // ì§€ë¶ˆê¸ˆì•¡
+	mart[] basket; // ì¥ë°”êµ¬ë‹ˆ
+	int cnt;// ì¥ë°”êµ¬ë‹ˆ ìˆ˜ëŸ‰
 	
 	
 	buyer(){}
@@ -19,52 +19,52 @@ public class buyer {
 	
 	@Override
 	public String toString() {
-		String out ="\n============ Àå¹Ù±¸´Ï ===============\n"+
-				"È¸¿ø¹øÈ£ : "+member_num+"  È¸¿ø¸í : "+member_name+"\n"+
-	                  "Àå¹Ù±¸´Ï ¸ñ·Ï \n";
+		String out ="\n============ ì¥ë°”êµ¬ë‹ˆ ===============\n"+
+				"íšŒì›ë²ˆí˜¸ : "+member_num+"  íšŒì›ëª… : "+member_name+"\n"+
+	                  "ì¥ë°”êµ¬ë‹ˆ ëª©ë¡ \n";
 		for(int i=0; i<basket.length; i++) {
 			out += (i+1)+". "+basket[i] +"\n";
 		}
-		out += "ÃÑ °áÁ¦ ±İ¾× : "+ total_price();
+		out += "ì´ ê²°ì œ ê¸ˆì•¡ : "+ total_price();
 		return out;
 	}
 	
 	String total_price() {
-		//Àå¹Ù±¸´Ï¿¡ ´ã°ÜÀÖ´Â ¹°°ÇÀÇ ÃÑ±İ¾× ±¸ÇÏ°í Ãµ´ÜÀ§ ÄŞ¸¶·Î º¯È¯ÇÏ¿© return ÇÏ¼¼¿ä
+		//ì¥ë°”êµ¬ë‹ˆì— ë‹´ê²¨ìˆëŠ” ë¬¼ê±´ì˜ ì´ê¸ˆì•¡ êµ¬í•˜ê³  ì²œë‹¨ìœ„ ì½¤ë§ˆë¡œ ë³€í™˜í•˜ì—¬ return í•˜ì„¸ìš”
 		int total=0;
 		for(int i=0; i<basket.length; i++) {
 			total += basket[i].price;
 		}
 		
 		DecimalFormat df = new DecimalFormat("###,###");
-		return df.format(total)+"¿ø";
+		return df.format(total)+"ì›";
 	}
 	
 	void basket_add( mart item ) {
 		if( cnt >= 1) {
-			mart[] temp = new mart[ basket.length + 1 ];//±âÁ¸ ¹è¿­º¸´Ù 1 ´õ¸¹Àº ¹è¿­»ı¼º
+			mart[] temp = new mart[ basket.length + 1 ];//ê¸°ì¡´ ë°°ì—´ë³´ë‹¤ 1 ë”ë§ì€ ë°°ì—´ìƒì„±
 			
 			for(int i=0; i<basket.length; i++) {
-				temp[i] = basket[i]; // ±âÁ¸ ¹è¿­ÀÇ °ªÀ» »õ·Î¿î ¹è¿­¿¡ ³Ñ°ÜÁÖ±â
+				temp[i] = basket[i]; // ê¸°ì¡´ ë°°ì—´ì˜ ê°’ì„ ìƒˆë¡œìš´ ë°°ì—´ì— ë„˜ê²¨ì£¼ê¸°
 			}
-			basket = temp; // »õ·Î¿î ¹è¿­ÀÇ ÁÖ¼Ò¸¦ ¹Ş¾Æ¼­  ±âÁ¸ ¹è¿­ ¹ö¸®±â
+			basket = temp; // ìƒˆë¡œìš´ ë°°ì—´ì˜ ì£¼ì†Œë¥¼ ë°›ì•„ì„œ  ê¸°ì¡´ ë°°ì—´ ë²„ë¦¬ê¸°
 		}
 		basket[cnt] = item;
 		cnt++;
 	}
 	
-	void payment() { // Àå¹Ù±¸´ÏÀÇ ¹°°Ç ÀüºÎ ±¸ÀÔ, ºñ¿ë ÁöºÒ, basket¹è¿­ ºñ¿ì±â  
+	void payment() { // ì¥ë°”êµ¬ë‹ˆì˜ ë¬¼ê±´ ì „ë¶€ êµ¬ì…, ë¹„ìš© ì§€ë¶ˆ, basketë°°ì—´ ë¹„ìš°ê¸°  
 		expend =  Integer.parseInt( total_price().replaceAll("[^0-9]", "") );
 		
-		System.out.println( "°áÁ¦ ±İ¾×Àº "+total_price()+" ÀÔ´Ï´Ù.");
-		basket=null; // Àå¹Ù±¸´Ï ºñ¿ì±â
+		System.out.println( "ê²°ì œ ê¸ˆì•¡ì€ "+total_price()+" ì…ë‹ˆë‹¤.");
+		basket=null; // ì¥ë°”êµ¬ë‹ˆ ë¹„ìš°ê¸°
 	}
 	
 	void basket_remove() {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println( this );
-		System.out.print("Á¦¿Ü ÇÒ ¹°°Ç ¹øÈ£ ÀÔ·Â : ");
+		System.out.print("ì œì™¸ í•  ë¬¼ê±´ ë²ˆí˜¸ ì…ë ¥ : ");
 		int num = scan.nextInt();
 		
 		for(int i=num; i< basket.length; i++) {
@@ -79,3 +79,6 @@ public class buyer {
 	
 	
 }
+
+
+

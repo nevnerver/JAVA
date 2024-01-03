@@ -6,28 +6,28 @@ public static final String end = "\u001B[0m";
 	public static void main(String[] args) {
 		
 		//
-		String song = "³ª´Â ¹Ù³ª³ª ¾Ë·¯Áö ¿ø¼þÀÌ ±×·¡µµ ³ª´Â ¹Ù³ª³ª ÁÁ¾ÆÇØ";
+		String song = "ë‚˜ëŠ” ë°”ë‚˜ë‚˜ ì•ŒëŸ¬ì§€ ì›ìˆ­ì´ ê·¸ëž˜ë„ ë‚˜ëŠ” ë°”ë‚˜ë‚˜ ì¢‹ì•„í•´";
 		
-		// 1. ¿øº»Àº À¯Áö ÇÏ°í ¸ðµç ¹Ù³ª³ª¸¦ ¿À·»Áö·Î º¯°æÇÏ¿© Ãâ·ÂÇÏ¼¼¿ä
-		// 2. °úÀÏ ¾Ë·¯Áö ÀÖ´Â ¿ø¼þÀÌ, ¾î¶² °úÀÏ¿¡ ¾Ë·¯Áö ÀÖ´ÂÁö Ãâ·ÂÇÏ¼¼¿ä
-		//    ( ¾Ë·¯Áö ¹®ÀÚ¿­ ¾ÕÀÇ °úÀÏ ÀÌ¸§¸¸ ÃßÃâ )
-		// 3. song ¹®ÀÚ¿­ ¾Õ¿¡  "»ó»ó¸¸ ÇØµµ ¿ôÀ½ÀÌ ³ª¿ä" ÇÕÃÄ¼­ ÇÏ³ªÀÇ ¹®ÀÚ¿­·Î Ãâ·ÂÇÏ¼¼¿ä
+		// 1. ì›ë³¸ì€ ìœ ì§€ í•˜ê³  ëª¨ë“  ë°”ë‚˜ë‚˜ë¥¼ ì˜¤ë Œì§€ë¡œ ë³€ê²½í•˜ì—¬ ì¶œë ¥í•˜ì„¸ìš”
+		// 2. ê³¼ì¼ ì•ŒëŸ¬ì§€ ìžˆëŠ” ì›ìˆ­ì´, ì–´ë–¤ ê³¼ì¼ì— ì•ŒëŸ¬ì§€ ìžˆëŠ”ì§€ ì¶œë ¥í•˜ì„¸ìš”
+		//    ( ì•ŒëŸ¬ì§€ ë¬¸ìžì—´ ì•žì˜ ê³¼ì¼ ì´ë¦„ë§Œ ì¶”ì¶œ )
+		// 3. song ë¬¸ìžì—´ ì•žì—  "ìƒìƒë§Œ í•´ë„ ì›ƒìŒì´ ë‚˜ìš”" í•©ì³ì„œ í•˜ë‚˜ì˜ ë¬¸ìžì—´ë¡œ ì¶œë ¥í•˜ì„¸ìš”
 		
-		String temp = song.replaceAll("¹Ù³ª³ª", "¿À·»Áö");
+		String temp = song.replaceAll("ë°”ë‚˜ë‚˜", "ì˜¤ë Œì§€");
 		System.out.println( temp );
 		
-		String fruit = song.substring(song.indexOf(" ")+1 ,  song.indexOf("¾Ë·¯Áö") );
+		String fruit = song.substring(song.indexOf(" ")+1 ,  song.indexOf("ì•ŒëŸ¬ì§€") );
 		System.out.println( fruit );
 		
-		temp = "»ó»ó¸¸ ÇØµµ ¿ôÀ½ÀÌ ³ª¿ä";
+		temp = "ìƒìƒë§Œ í•´ë„ ì›ƒìŒì´ ë‚˜ìš”";
 		System.out.println(  temp.concat(song)  );
 		
-		//°úÁ¦
-		song = "Å©¸®½º¸¶½º¿¡´Â ¸¹Àº °ÍÀ» ¿øÁF ¾Ê¾Æ¿ä # ³»°¡ ¿øÇÏ´Â°Ç µü ÇÏ³ª¿¡¿ä # "
-				+"Æ®¸® ¾Æ·¡ÀÇ ¼±¹° °°Àº°Íµµ ½Å°æ¾²Áö ¾Ê¾Æ¿ä # ´ç½ÅÀ» ¿øÇØ¿ä #"
-				+"´ç½ÅÀÌ »ý°¢ÇÏ´Â °Íº¸´Ù ´õ # ³» ¼Ò¿øÀ» ÀÌ·ïÁà¿ä #"
-				+ "³»°¡ Å©¸®½º¸¶½º¿¡ ¿øÇÏ´Â°Ç ´ç½ÅÀÌ¿¡¿ä";
-		System.out.println("¿øº» :" + song +"\n" );
+		//ê³¼ì œ
+		song = "í¬ë¦¬ìŠ¤ë§ˆìŠ¤ì—ëŠ” ë§Žì€ ê²ƒì„ ì›í•® ì•Šì•„ìš” # ë‚´ê°€ ì›í•˜ëŠ”ê±´ ë”± í•˜ë‚˜ì—ìš” # "
+				+"íŠ¸ë¦¬ ì•„ëž˜ì˜ ì„ ë¬¼ ê°™ì€ê²ƒë„ ì‹ ê²½ì“°ì§€ ì•Šì•„ìš” # ë‹¹ì‹ ì„ ì›í•´ìš” #"
+				+"ë‹¹ì‹ ì´ ìƒê°í•˜ëŠ” ê²ƒë³´ë‹¤ ë” # ë‚´ ì†Œì›ì„ ì´ë¤„ì¤˜ìš” #"
+				+ "ë‚´ê°€ í¬ë¦¬ìŠ¤ë§ˆìŠ¤ì— ì›í•˜ëŠ”ê±´ ë‹¹ì‹ ì´ì—ìš”";
+		System.out.println("ì›ë³¸ :" + song +"\n" );
 		
 		String song1 = song.replaceAll("#", "\n");
 		System.out.println( song1 );
@@ -35,23 +35,24 @@ public static final String end = "\u001B[0m";
 		for( String sng : song2)
 			System.out.println(sng);
 		
-		String song3 = song1.replaceAll("´ç½Å", "±×´ë");
+		String song3 = song1.replaceAll("ë‹¹ì‹ ", "ê·¸ëŒ€");
 		System.out.println("\n\n"+song3+"\n");
 		
-		String song4 = song1.replaceAll("Å©¸®½º¸¶½º", "christmas");
+		String song4 = song1.replaceAll("í¬ë¦¬ìŠ¤ë§ˆìŠ¤", "christmas");
 		System.out.println(song4.toUpperCase()+ "\n\n");
 		
 		String[] song5 = song.split("#");
 		System.out.println( song5[3].trim()  );
 		
 /*
- *   1. # ±âÁØÀ¸·Î ÇÑÁÙ¾¿ Ãâ·Â ÇÏ¼¼¿ä( #Àº  Ãâ·ÂÃ¢¿¡ ³ª¿À¸é ¾ÈµÇ¿ä)
- *   2. ´ç½Å ÀÌ¶ó´Â ´Ü¾î ´ë½Å  "±×´ë" ¶ó°í ¹Ù²Ù¾î¼­ Ãâ·ÂÇÏ¼¼¿ä
- *   3. Å©¸®½º¸¶½º¸¦  ¿µ¾î·Î º¯°æÇÏ¿© Ãâ·ÂÇÏ¼¼¿ä(´ë¹®ÀÚ·Î)
- *   4. ¼¼¹øÂ°#µÚÀÇ °¡»ç°¡ ¹«¾ùÀÎÁö Ãâ·ÂÇÏ¼¼¿ä.
+ *   1. # ê¸°ì¤€ìœ¼ë¡œ í•œì¤„ì”© ì¶œë ¥ í•˜ì„¸ìš”( #ì€  ì¶œë ¥ì°½ì— ë‚˜ì˜¤ë©´ ì•ˆë˜ìš”)
+ *   2. ë‹¹ì‹  ì´ë¼ëŠ” ë‹¨ì–´ ëŒ€ì‹   "ê·¸ëŒ€" ë¼ê³  ë°”ê¾¸ì–´ì„œ ì¶œë ¥í•˜ì„¸ìš”
+ *   3. í¬ë¦¬ìŠ¤ë§ˆìŠ¤ë¥¼  ì˜ì–´ë¡œ ë³€ê²½í•˜ì—¬ ì¶œë ¥í•˜ì„¸ìš”(ëŒ€ë¬¸ìžë¡œ)
+ *   4. ì„¸ë²ˆì§¸#ë’¤ì˜ ê°€ì‚¬ê°€ ë¬´ì—‡ì¸ì§€ ì¶œë ¥í•˜ì„¸ìš”.
  * 
  * 
  */
 	}
 
 }
+
